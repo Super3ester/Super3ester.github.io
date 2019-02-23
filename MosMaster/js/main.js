@@ -74,6 +74,9 @@ $(function() {
 
 
 /* Order form Calculator */
+var roof = 10 * 400;
+lamp = 2 * 450;
+
 $('#order-calculator input#roof').on('input keyup', function() {
 	roof = $(this).val() * 400;
 	$('.roof-price').text(roof + " ₽");
