@@ -34,7 +34,7 @@ window.isset = function (v) {
 function myconf() {
     var cf = $.Deferred();
         $.ajax({
-            type: 'POST',
+            type: 'Get',
             url: 'feedback/',
             dataType: 'json',
             data: 'act=cfg',
@@ -77,7 +77,7 @@ function feedback(vars) {
     var cfg = conf[vars.act].cfg;
 
     $.ajax({
-        type: 'POST',
+        type: 'Get',
         url: 'feedback/',
         cache: false,
         dataType: 'json',
